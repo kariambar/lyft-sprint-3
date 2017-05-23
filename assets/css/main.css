@@ -21,11 +21,9 @@ body{
 }
 
 
-/*div.contenedor{
-margin:0;
-}*/
+/*barra de navegación*/
 
-.contedor{
+.contenedor{
 	top: 0;
 	right: 0;
 	box-sizing: inherit;
@@ -63,7 +61,9 @@ nav ul li a{
 nav ul li a:hover{
 	color: #1efff4;
 }
+/* Fin de navegación*/
 
+/*Inicio del Home*/
 .home{
 	overflow: hidden;
 	position:relative;
@@ -73,13 +73,13 @@ nav ul li a:hover{
 	color:#fff;
 }
 
+/*Formulario*/
 .cuadrado{ 
 	width: 510px;
 	height: 400px;
 	background-color: #ede9e2;
 	float: right;
 	margin-top: 100px;
-
 }
 
 .letras{
@@ -89,23 +89,19 @@ nav ul li a:hover{
 }
 h1{
 	color:#00B2A9;
-	font-size: 25px;
-	
+	font-size: 25px;	
 } 
-
 h3{
 	color:#878c8d;
 	font-size: 15px;
 	font-weight: 400;
 	margin-top: 20px;
-	
 } 
-
-.group 			  { 
+.group{ 
   position:relative; 
   margin-top: 30px; 
 }
-input 				{
+input{
   font-size:18px;
   padding:10px 10px 10px 5px;
   display:block;
@@ -113,10 +109,10 @@ input 				{
   border:none;
   border-bottom:1px solid #757575;
 }
-input:focus 		{ outline:none; }
+input:focus{ outline:none; }
 
 /* LABEL ======================================= */
-label 				 {
+label{
   color:#999; 
   font-size:12px;
   font-weight:normal;
@@ -130,7 +126,7 @@ label 				 {
 }
 
 /* active state */
-input:focus ~ label, input:valid ~ label 		{
+input:focus ~ label, input:valid ~ label{
   top:-20px;
   font-size:10px;
   color:#5264AE;
@@ -138,8 +134,8 @@ input:focus ~ label, input:valid ~ label 		{
 
 
 /* BOTTOM BARS ================================= */
-.bar 	{ position:relative; display:block; width:300px; }
-.bar:before, .bar:after 	{
+.bar { position:relative; display:block; width:300px; }
+.bar:before, .bar:after{
   content:'';
   height:2px; 
   width:0;
@@ -150,10 +146,10 @@ input:focus ~ label, input:valid ~ label 		{
   -moz-transition:0.2s ease all; 
   -webkit-transition:0.2s ease all;
 }
-.bar:before {
+.bar:before{
   left:50%;
 }
-.bar:after {
+.bar:after{
   right:50%; 
 }
 
@@ -162,7 +158,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
   width:50%;
 }
 
-button {
+button{
   background-color: #E56385;
   color: white;
   border: none;
@@ -170,17 +166,13 @@ button {
   cursor: pointer;
   margin-top: 30px; 
    margin-left: 30px; 
-
 }
-
 #boton-rosado{
 	width: 300px;
 	height: 50px;
 	font-size: 15px;
 	box-shadow: 0 4px 2px -2px gray;
 }
-
-
 p{
 	color: #2c2b2a;
 	font-size: 12px;
@@ -188,14 +180,14 @@ p{
 	margin-left: 40px;
 	margin-top: 20px; 
 }
+/*Fin del Home*/
 
-.fondo{
+.play-with{  
 	width: 100%;
 	height: 560px;
 	background-color: #00B2A9;
 	position: relative;
 }
-
 .linea-blanca{
 	width: 100%;
 	height: 100px;
@@ -203,7 +195,6 @@ p{
 	background-color: #ede9e2;
 	margin-top: 100px;
 }
-
 .linea-blanca p{
 	color: gray;
 	font-size: 45px;
@@ -212,22 +203,48 @@ p{
 }
 
 .auto{
-	display: inline-block;
-}
-.cordenadas{
 	width: 900px;
 	height: 250px;
 	background-color: #ede9e2;
-	position: center;
+	position: relative;
 	margin-left: 300px;
-	position: absolute;
 	margin-top: 270px; 
+	display: inline-block;
+	float: left;
 }
 
-.cordenadas{
+.cordenada1{
+	position: absolute;
 	display: inline-block;
-	float: right;
-	box-sizing: inherit;
+	margin-left: 100px;
+	margin-top: 20px;
+}
+
+.cordenada2{
+	position: absolute;
+	display: inline-block;
+	float: left;
+	margin-left: 500px;
+	margin-top: 20px;
+}
+
+
+ .group i{
+	font-size: 20px;
+	color: gray;
+	position: relative;
+	padding-left: 100px;
+}
+
+.btn{
+	background-color: #00B2A9;
+	width: 800px;
+	height: 45px;
+	font-size: 15px;
+	box-shadow: 0 4px 2px -2px gray;
+	margin-left: 50px;
+	margin-top: 150px;
+	position: absolute;
 }
 
 .before-foo{
@@ -247,26 +264,10 @@ p{
 	font-weight: 400;
 	padding-top: 50px;
 	position: absolute;
-
 }
-
 h2{
 	font-size: 20px;
 }
-
-/*.dere h4, .lin{
-	float: right;
-	color: #ede9e2;
-	font-weight: 400;
-	padding-top: 50px;
-	position: absolute;
-
-}
-
-h4{
-	font-size: 20px;
-}*/
-
 .dere{
 	color: #ede9e2;
 	margin-left: 500px;
@@ -275,13 +276,11 @@ h4{
 	float: left;
 	font-size: 20px;
 }
-
 h4{
 	margin-left: 400px;
 	font-weight: 400;
 	margin-top: 20px;
 }
-
 .linkeado{
 	color: #ede9e2;
 	font-weight: 400;
@@ -291,12 +290,10 @@ h4{
 	float: left;
 	line-height: 18px;
 }
-
 .linkeado a{
 	color: #ede9e2;
 	text-decoration: none;
 }
-
 footer{
 	width: 100%;
 	height: 50px;
@@ -304,7 +301,6 @@ footer{
 	margin:0;
 	display: inline-block;
 }
-
 .laboratoria{
 	color: #ede9e2;
 	margin: 0;

@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+<!-- barra de navegación -->
 <header>
 <div class="contenedor">
 	<nav>
@@ -22,6 +23,7 @@
 	 </nav>
 </div>
 </header>
+<!-- Home + caja de formulario -->
 <section class="home">
 	<div class="cuadrado">
 	<div class="letras">
@@ -43,28 +45,41 @@
 		 <p>Ear money for inviting frinds to drive. Learn More</p>
 	</div>
 </section>
+<!-- formulario position x -y -->
 <section class="play-with">
-	<div class="fondo">
+	<div class="contenido">
 		<div class="linea-blanca">
 		<p>PLAY WITH LYFT</p>
-		</div>
-	<div class="auto">	
-		<div class="cordenadas">
-			<div class="group">      
-		      <input type="text" required>
-		      <span class="highlight"></span>
-		      <span class="bar"></span>
-		      <label>X coordinate</label>
-		    </div> 
-    	<div class="group">      
-	      <input type="text" required>
-	      <span class="highlight"></span>
-	      <span class="bar"></span>
-	      <label>Y coordinate</label>
-		 </div> 
+		</div>	
+		<!-- lineas del formulario position x -y -->
+	<div class="auto" class="start">	
+		<form action="#" method="post">
+		<!-- Linea 1 formulario -->
+			<div class="cordenada1">
+				<div class="group">  
+					<i class="fa fa-car" aria-hidden="true"></i>    
+			      		<input type="numero" name="x-coordenada" id="position_x" value="" required>
+			        <span class="highlight"></span>
+			           <span class="bar"></span>
+			              <label>X coordinate</label>
+		        </div> 
+		   </div> 
+		    <!-- Linea 2 formulario -->
+		    <div class="cordenada2">
+    			<div class="group"> 
+    			<i class="fa fa-car" aria-hidden="true"></i>     
+	       			<input type="numero" name="y-coordenada" id="position_y" value="" required>
+	      				<span class="highlight"></span>
+	      					<span class="bar"></span>
+	      						<label>Y coordinate</label>
+		 		</div>
+		 	</div>
+		 <button class="btn" id="play" tabindex="5">Start</button>
 	    </div>
 	</div>
+</div>	
 </section>
+<!-- sección antes de footer -->
 <section>
 	<div class="before-foo">
 		<div class="izq">
@@ -86,8 +101,9 @@
 			</div>
 	</div>		
 </section>
+<!-- footer -->
 	<footer>
-	<p class="laboratoria">© 2017 Lyft & Laboratoria. Inc</p></footer>
-<script src="assets/js/main.js"></script>
+	<p class="laboratoria">© 2017 Lyft & Laboratoria. Inc - Desarrollado por Karina Ambar</p></footer>
+	<script src="assets/js/main.js"></script>
 </body>
 </html>
