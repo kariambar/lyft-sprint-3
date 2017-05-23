@@ -206,7 +206,7 @@ p{
 	width: 900px;
 	height: 250px;
 	background-color: #ede9e2;
-	position: relative;
+	position: absolute;
 	margin-left: 300px;
 	margin-top: 270px; 
 	display: inline-block;
@@ -223,7 +223,6 @@ p{
 .cordenada2{
 	position: absolute;
 	display: inline-block;
-	float: left;
 	margin-left: 500px;
 	margin-top: 20px;
 }
@@ -234,6 +233,8 @@ p{
 	color: gray;
 	position: relative;
 	padding-left: 100px;
+	display: inline-block;
+	
 }
 
 .btn{
