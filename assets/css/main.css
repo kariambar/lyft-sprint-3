@@ -25,11 +25,20 @@ body{
 margin:0;
 }*/
 
+.contedor{
+	
+  top: 0;
+  right: 0;
+  box-sizing: inherit;
+}
+
 nav{
 	width: 100%;
 	background-color: #E54E79;
 	height: 60px;
 	overflow: hidden;
+	position: fixed;
+	z-index: 1000;
 }
 
 nav figure{
@@ -60,7 +69,7 @@ nav ul li a{
 }
 
 nav ul li a:hover {
-	color: #FF00BF;
+	color: #1efff4;
 }
 
 .home {
@@ -72,14 +81,147 @@ background-size: cover;
 color:#fff;
 }
 
-.home-fondo{
+.cuadrado{
 	width: 510px;
 	height: 400px;
 	background-color: #ede9e2;
 	float: right;
 	margin-top: 100px;
+
 }
 
+.letras{
+	float: left;
+	margin-left: 40px;
+	margin-top: 50px; 
+}
 h1{
-	float: right;
+	color:#00B2A9;
+	font-size: 25px;
+	
+} 
+
+h3{
+	color:#878c8d;
+	font-size: 15px;
+	font-weight: 400;
+	margin-top: 20px;
+	
+} 
+
+.group 			  { 
+  position:relative; 
+  margin-top: 30px; 
+}
+input 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+button {
+  background-color: #E56385;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 30px; 
+   margin-left: 30px; 
+
+}
+
+#boton-rosado{
+	width: 300px;
+	height: 50px;
+	font-size: 15px;
+	box-shadow: 0 4px 2px -2px gray;
+}
+
+p{
+	color: #2c2b2a;
+	font-size: 12px;
+	font-weight: 600px;
+	margin-left: 40px;
+	margin-top: 20px; 
+}
+
+.fondo{
+	width: 100%;
+	height: 560px;
+	background-color: #00B2A9;
+	position: relative;
+}
+
+.linea-blanca{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	background-color: #ede9e2;
+	margin-top: 100px;
+}
+
+.linea-blanca p{
+	color: gray;
+	font-size: 45px;
+	text-align: center;
+	font-weight: 600;
+}
+
+
+.cordenadas{
+	width: 900px;
+	height: 260px;
+	background-color: white;
+	position: center;
 }
