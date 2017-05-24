@@ -1,7 +1,6 @@
 alert("hola");
-
 //INTENTANDO VALIDAR EL TELEFONO version 2
-/*document.getElementById("boton-rosado").addEventListener("click",function(){
+document.getElementById("boton-rosado").addEventListener("click",function(){
 	var inputNumber = document.getElementById("input-number");
 	event.preventDefault(); 
 	
@@ -22,7 +21,7 @@ function validarFono(inputNumber){
 		return false; 
 	}
 }
-*/
+
 
 //Intento de mostrar el evento al apretar el boton click
 var anadir = document.getElementById('play');
