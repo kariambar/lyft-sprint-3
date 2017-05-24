@@ -12,39 +12,37 @@ if (fono == "") {
 
 */
 
-
+//INTENTANDO VALIDAR EL TELEFONO 2
 document.getElementById("boton-rosado").addEventListener("click",function(){
-	var number = document.getElementById("boton-rosado");
+	var number = document.getElementById("fonoc");
 	event.preventDefault(); 
 	
-	if(validarFono(number)){
+	if(campoNumber(number)){
 		alert("Gracias por tu respuesta");
 	}
 });
 
-function validarFono(inputNumber){
+function campoNumber(number){
 	var fono = /^[0-9]{9,11}$/;
-	if(inputNumber.value.match(fono)){
-		inputNumber.value = "";
+	if(number.value.match(fono)){
+		number.value = "";
 		return true;
 	}else{
-		inputNumber.value = "";
-		alert("Debe ingresar un número de teléfono válido con más de 9 dígitos");  
-		inputNumber.focus();  
+		number.value = "";
+		alert("Ingresar un número válido con más de 9 dígitos");  
+		number.focus();  
 		return false; 
 	}
 }
 
 
+//Intento de mostrar el evento al apretar el boton click
+var anadir = document.getElementById('play');
+anadir.addEventListener("click", function);
 
-
-
-
-
-
-
-
-
+function Ocultar(){
+	document.getElementsClassName("contenido").style.display = "none";
+}
 
 
 
@@ -53,6 +51,7 @@ function validarFono(inputNumber){
 
 //Defino el tablero
 var tablero = [
+for (i=0 ; i<6 ; i++){
   [0,0,0,0,0,0,0,0,0,0],
   [0,0,0,0,0,0,0,0,0,0],
   [0,0,0,0,0,0,0,0,0,0],
@@ -60,6 +59,7 @@ var tablero = [
   [0,0,0,0,0,0,0,0,0,0],
   [0,0,0,0,0,0,0,0,0,0]
 ]
+}
 //Ingreso el auto en la posicion 3,5
 tablero[3][5] = "A";
 
@@ -82,16 +82,25 @@ for(var i = 0; i<tablero.length; i++){
   divTablero.appendChild(fila);
 }
 
-//Intento de mostrar el evento al apretar el boton click
-var anadir = document.getElementById('play');
-anadir.addEventListener("click", function);
 
-function Ocultar(){
-	document.getElementsClassName("contenido").style.display = "none";
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //Intento de mover teclas dentro del tablero
-var teclas = {
+/*var teclas = {
   UP: 38,
   DOWN: 40,
   LEFT: 37,
@@ -140,4 +149,4 @@ function dibujarTeclado(evento)
       x = x + movimiento;
     break;
   }
-}
+}*/
