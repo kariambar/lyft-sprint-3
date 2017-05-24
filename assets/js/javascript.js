@@ -1,4 +1,30 @@
-alert("hola");
+var btnFono = document.getElementById("boton-rosado");
+var start = document.getElementById("play");
+var play = document.getElementsByClassName("play-width")[0];
+var fondo = document.getElementById("auto");
+
+btnFono.addEventListener("click",function(){
+	var fono = document.getElementById("fono").value;
+	if(!(/^\d{9}$/.test(fono))) {
+  		alert("Debes ingresar un número de nueve dígitos");
+	}else{
+		alert("¡Gracias por registrarte con nosotros!");
+	}
+
+	fono = " ";
+});
+
+start.addEventListener("click", function(){
+	play.removeChild(fondo);
+	
+	var newCaja = document.createElement("div");
+	newCaja.setAttribute("id","juego");
+
+	play.appendChild(newCaja);
+
+});
+
+/*alert("hola");
 //INTENTANDO VALIDAR EL TELEFONO version 2
 document.getElementById("boton-rosado").addEventListener("click",function(){
 	var inputNumber = document.getElementById("input-number");
@@ -30,7 +56,7 @@ anadir.addEventListener("click", function);
 function Ocultar(){
 	document.getElementsClassName("contenido").style.display = "none";
 }
-
+*/
 
 //INTENTO DE CASILLAS PARA JUEGO
 
