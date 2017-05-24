@@ -47,7 +47,7 @@ function validarFono(inputNumber){
 		return false; 
 	}
 }
-
+*/
 
 //Intento de mostrar el evento al apretar el boton click
 var anadir = document.getElementById('play');
@@ -56,7 +56,7 @@ anadir.addEventListener("click", function);
 function Ocultar(){
 	document.getElementsClassName("contenido").style.display = "none";
 }
-*/
+
 
 //INTENTO DE CASILLAS PARA JUEGO
 
