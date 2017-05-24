@@ -1,7 +1,7 @@
 alert("hola");
 
 //INTENTANDO VALIDAR EL TELEFONO version 2
-document.getElementById("boton-rosado").addEventListener("click",function(){
+/*document.getElementById("boton-rosado").addEventListener("click",function(){
 	var inputNumber = document.getElementById("input-number");
 	event.preventDefault(); 
 	
@@ -22,7 +22,7 @@ function validarFono(inputNumber){
 		return false; 
 	}
 }
-
+*/
 
 //Intento de mostrar el evento al apretar el boton click
 var anadir = document.getElementById('play');
@@ -31,8 +31,6 @@ anadir.addEventListener("click", function);
 function Ocultar(){
 	document.getElementsClassName("contenido").style.display = "none";
 }
-
-
 
 
 //INTENTO DE CASILLAS PARA JUEGO
@@ -70,25 +68,8 @@ for(var i = 0; i<tablero.length; i++){
   divTablero.appendChild(fila);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Intento de mover teclas dentro del tablero
-/*var teclas = {
+var teclas = {
   UP: 38,
   DOWN: 40,
   LEFT: 37,
@@ -116,7 +97,7 @@ function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, lienzo)
 
 function dibujarTeclado(evento)
 {
-  var colorcito = "#FAA";
+  var colorcito = "pink";
   var movimiento = 5;
   switch(evento.keyCode)
   {
