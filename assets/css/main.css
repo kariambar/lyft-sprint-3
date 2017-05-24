@@ -79,7 +79,7 @@ nav ul li a:hover{
 	height: 400px;
 	background-color: #ede9e2;
 	float: right;
-	margin-top: 100px;
+	margin-top: 200px;
 }
 
 .letras{
@@ -165,7 +165,7 @@ button{
   border-radius: 10px;
   cursor: pointer;
   margin-top: 30px; 
-   margin-left: 30px; 
+   
 }
 #boton-rosado{
 	width: 300px;
@@ -177,8 +177,8 @@ p{
 	color: #2c2b2a;
 	font-size: 12px;
 	font-weight: 600px;
-	margin-left: 40px;
-	margin-top: 20px; 
+	margin-top: 20px;
+	line-height:4px;
 }
 /*Fin del Home*/
 
@@ -200,6 +200,7 @@ p{
 	font-size: 45px;
 	text-align: center;
 	font-weight: 600;
+	line-height: 50px;
 }
 
 .auto{
@@ -308,4 +309,24 @@ footer{
 	margin-left: 300px;
 	padding-top:20px;
 	font-size: 14px;
+}
+
+/*elementos de js*/
+
+#tablero{
+  border: 5px solid #900C3F;
+  visibility: hidden;
+}
+.casilla{
+  box-sizing: border-box;
+  /*Es mejor con float:left*/
+  display:inline-block;
+  background-color: #581845;
+  color: whitesmoke;
+  padding: 10px;
+  font-family: sans-serif;
+  width: 10%;
+  text-align: center;
+  border: 5px #900C3F solid;
+
 }
